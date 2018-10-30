@@ -39,6 +39,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+/static
+/media
 MANIFEST
 
 # PyInstaller
