@@ -12,4 +12,5 @@ class Realtor(models.Model):
     hire_date = models.DateTimeField(default=datetime.now, blank=True)
     #this def makes the realtors name show up in django admin 
     def __str__(self):
+        #this line tells django what to display when calling .realtor in {{}}
         return self.name
