@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('zipcode', models.CharField(max_length=20)),
                 ('description', models.TextField(blank=True)),
                 ('price', models.IntegerField()),
-                ('bedroom', models.IntegerField()),
+                ('bedrooms', models.IntegerField()),
                 ('bathrooms', models.DecimalField(decimal_places=1, max_digits=2)),
                 ('garage', models.IntegerField(default=0)),
                 ('sqft', models.IntegerField()),

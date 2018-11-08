@@ -46,7 +46,8 @@
                 <div class="listing-heading text-center">
                   <h4 class="text-primary">{{ listing.title }}</h4>
                   <p>
-                    <i class="fas fa-map-marker text-secondary"></i> {{ listing.city }},  {{ listing.state }}, {{ listing.zipcode }}</p>
+                    <i class="fas fa-map-marker text-secondary"></i> {{ listing.city }},  
+                    {{listing.state}}, {{ listing.zipcode }}</p>
                 </div>
                 <hr>
                 <div class="row py-2 text-secondary">
@@ -54,7 +55,7 @@
                     <i class="fas fa-th-large"></i> Sqft:{{ listing.sqft }}</div>
                   <div class="col-6">
                     <i class="fas fa-car"></i> Garage: {{ listing.garage }}</div>
-                </div>
+                  </div>
                 <div class="row py-2 text-secondary">
                   <div class="col-6">
                     <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}</div>
@@ -84,7 +85,7 @@
           </div>
         {% endif %}
       </div>
-
+      
       <div class="row">
         <div class="col-md-12">
           {% if listings.has_other_pages %}

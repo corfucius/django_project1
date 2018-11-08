@@ -2,13 +2,21 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from listings.models import Listing
 from listings.models import Realtor
+from listings.choices import price_choices, bedroom_choices, state_choices
+
 
 def index(request):
     #[:3] only shows three listings
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)[:3]
+    #we bring in these dictionaries from listings/choices.py to be used on pages/index.html
+
     context = {
-        'listings': listings
-    }#this return passes the listings into the html to be processed
+        'listings': listings,
+        'price_choices': price_choices,
+        'bedroom_choices': bedroom_choices,
+        'state_choices': state_choices
+    }
+    #this return passes the listings into the html to be processed
     return render(request, 'pages/index.html', context)
 
   
