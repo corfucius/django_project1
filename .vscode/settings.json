@@ -5,6 +5,7 @@
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
     "html.format.enable": false,
+    "python.linting.pylintEnabled": false,
    
 }
     
